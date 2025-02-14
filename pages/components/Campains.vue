@@ -1,6 +1,8 @@
 <script setup>
 import { ref } from 'vue';
 import UiChildCard from '@/components/shared/UiChildCard.vue';
+import Details from '@/components/ui-components/campain/Details.vue';
+
 const desserts = ref([
     {
         name: "Frozen Yogurt",
@@ -43,16 +45,23 @@ const desserts = ref([
         calories: 518,
     },
 ]);
+function showDetails() {
+        showModal = true;
+      }
+const isOpen = ref(false)
 </script>
 
 <template>
-    <div>
+    <div>   
 
-    <h1>Detalles de la campana</h1>
-    <input type="file" @change="handleFileUpload" accept=".csv" />
+    <v-col cols="12">
+                    <UiChildCard title="Campaña">
+                        <Details />
+                    </UiChildCard>
+        </v-col>
     <v-row class="month-table">       
         <v-col cols="12" sm="12">
-            <UiChildCard title="Header Fixed Table">
+            <UiChildCard title="Detalles de la Campaña">   
                 <v-table fixed-header height="300px">
                     <thead>
                         <tr>
@@ -72,18 +81,40 @@ const desserts = ref([
                             <td>{{ item.deuda }}</td>
                             <td>{{ item.porcentaje }}</td>
                             <td>
-                            <button @click="showDetails(row)">Detalles</button>
-                            </td>
+                                <button type="button"  @click="showDetails()" class="v-btn v-theme--light text-primary v-btn--density-default v-btn--size-default v-btn--variant-tonal">
+                                    <span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!----><span class="v-btn__content" data-no-activator="">Detalles</span><!----><!----></button>                            </td>
                         </tr>
                     </tbody>
                 </v-table>
             </UiChildCard>
         </v-col>
     </v-row>
+<!-- Modal para mostrar detalles -->
+<div v-if="showModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            Detalles de 
+          </div>
+          <div class="modal-body">
+            <p><strong>Ciudad:</strong></p>
+            <p><strong>Barrio:</strong></p>
+            <p><strong>Edad:</strong> </p>
+          </div>
+          <button class="close-btn" @click="closeModal">Cerrar</button>
+        </div>
+      </div>
+
+
 </div>
 </template>
 
-<script setup lang="ts">
-
+<script>
+  export default {
+    data () {
+      return {
+        showModal: false,
+      }
+    },
+  }
 </script>
 
