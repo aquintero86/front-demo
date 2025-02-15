@@ -1,0 +1,103 @@
+[
+    {
+      "name": "Juan Pérez",
+      "email": "juan.perez@example.com",
+      "mobile": "+57 320 1234567",
+      "amount": 1500.75,
+      "percentage": 12.5,
+      "city": "Bogotá",
+      "neighborhood": "Chapinero",
+      "age": 32
+    },
+    {
+      "name": "María Gómez",
+      "email": "maria.gomez@example.com",
+      "mobile": "+57 310 7654321",
+      "amount": 2300.00,
+      "percentage": 9.8,
+      "city": "Medellín",
+      "neighborhood": "El Poblado",
+      "age": 28
+    },
+    {
+      "name": "Carlos Ramírez",
+      "email": "carlos.ramirez@example.com",
+      "mobile": "+57 315 9876543",
+      "amount": 1750.50,
+      "percentage": 15.3,
+      "city": "Cali",
+      "neighborhood": "Granada",
+      "age": 45
+    },
+    {
+      "name": "Ana Torres",
+      "email": "ana.torres@example.com",
+      "mobile": "+57 300 6543210",
+      "amount": 800.25,
+      "percentage": 7.2,
+      "city": "Barranquilla",
+      "neighborhood": "El Prado",
+      "age": 22
+    },
+    {
+      "name": "Felipe Rojas",
+      "email": "felipe.rojas@example.com",
+      "mobile": "+57 317 1122334",
+      "amount": 3200.90,
+      "percentage": 18.7,
+      "city": "Cartagena",
+      "neighborhood": "Getsemaní",
+      "age": 39
+    },
+    {
+      "name": "Laura Herrera",
+      "email": "laura.herrera@example.com",
+      "mobile": "+57 304 5566778",
+      "amount": 1250.40,
+      "percentage": 10.5,
+      "city": "Bucaramanga",
+      "neighborhood": "Cabecera del Llano",
+      "age": 30
+    },
+    {
+      "name": "Andrés López",
+      "email": "andres.lopez@example.com",
+      "mobile": "+57 321 2233445",
+      "amount": 2900.60,
+      "percentage": 14.2,
+      "city": "Pereira",
+      "neighborhood": "Los Alpes",
+      "age": 41
+    },
+    {
+      "name": "Sofía Martínez",
+      "email": "sofia.martinez@example.com",
+      "mobile": "+57 311 8899001",
+      "amount": 1100.30,
+      "percentage": 8.3,
+      "city": "Manizales",
+      "neighborhood": "Palermo",
+      "age": 27
+    },
+    {
+      "name": "Julián Castro",
+      "email": "julian.castro@example.com",
+      "mobile": "+57 305 6677889",
+      "amount": 2750.80,
+      "percentage": 16.9,
+      "city": "Santa Marta",
+      "neighborhood": "El Rodadero",
+      "age": 36
+    },
+    {
+      "name": "Camila Sánchez",
+      "email": "camila.sanchez@example.com",
+      "mobile": "+57 318 4455667",
+      "amount": 950.75,
+      "percentage": 6.5,
+      "city": "Cúcuta",
+      "neighborhood": "La Riviera",
+      "age": 24
+    }
+  ]
+  

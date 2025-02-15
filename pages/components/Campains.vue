@@ -2,49 +2,8 @@
 import { ref } from 'vue';
 import UiChildCard from '@/components/shared/UiChildCard.vue';
 import Details from '@/components/ui-components/campain/Details.vue';
-
-const desserts = ref([
-    {
-        name: "Frozen Yogurt",
-        calories: 159,
-    },
-    {
-        name: "Ice cream sandwich",
-        calories: 237,
-    },
-    {
-        name: "Eclair",
-        calories: 262,
-    },
-    {
-        name: "Cupcake",
-        calories: 305,
-    },
-    {
-        name: "Gingerbread",
-        calories: 356,
-    },
-    {
-        name: "Jelly bean",
-        calories: 375,
-    },
-    {
-        name: "Lollipop",
-        calories: 392,
-    },
-    {
-        name: "Honeycomb",
-        calories: 408,
-    },
-    {
-        name: "Donut",
-        calories: 452,
-    },
-    {
-        name: "KitKat",
-        calories: 518,
-    },
-]);
+import json_data from '@/components/ui-components/campain/data.json';
+const data_clients =  json_data
 function showDetails() {
         showModal = true;
       }
@@ -74,14 +33,14 @@ const isOpen = ref(false)
                         </tr>
                     </thead>
                     <tbody>
-                        <tr v-for="item in desserts" :key="item.name">
+                        <tr v-for="item in data_clients" :key="item.name">
                             <td>{{ item.name }}</td>
-                            <td>{{ item.calories }}</td>
-                            <td>{{ item.telefono }}</td>
-                            <td>{{ item.deuda }}</td>
-                            <td>{{ item.porcentaje }}</td>
+                            <td>{{ item.email }}</td>
+                            <td>{{ item.mobile }}</td>
+                            <td>{{ item.amount }}</td>
+                            <td>{{ item.percentage }} % </td>
                             <td>
-                                <button type="button"  @click="showDetails()" class="v-btn v-theme--light text-primary v-btn--density-default v-btn--size-default v-btn--variant-tonal">
+                                <button type="button"  @click="showDetails(item)" class="v-btn v-theme--light text-primary v-btn--density-default v-btn--size-default v-btn--variant-tonal">
                                     <span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!----><span class="v-btn__content" data-no-activator="">Detalles</span><!----><!----></button>                            </td>
                         </tr>
                     </tbody>

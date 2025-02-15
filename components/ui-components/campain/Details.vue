@@ -12,7 +12,6 @@ const alert = ref(true);
                             <tr> <th>Identificador Campaña</th> </tr>
                             <tr> <th>Total Cartera</th> </tr>
                             <tr> <th>Total Cartera recuperable</th> </tr>
-                            <tr> <th><input type="file" @change="" accept=".csv" /></th> </tr>
                         </thead>
                     </v-table>
                     </UiChildCard>
